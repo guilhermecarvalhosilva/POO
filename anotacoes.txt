@@ -1,0 +1,3 @@
+A classe é a forma de representar em código algum objeto do mundo real
+
+è composta por dados(atributos) e comportamento(métodos)
