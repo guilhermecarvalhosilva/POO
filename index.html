@@ -5,15 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista da Loja - POO</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     
-    <div class="card">
-        <h1>Controle de produto</h1>
-        <input type="text" name="" id="ola">
-        <button onclick="produto.adicionar()">Adicionar</button>
-        <button onclick="produto.excluir()">Excluir</button>
-    </div>
+    <header class="cabecalho">
+        <h1 class="titulo">
+            Minha Loja 1.0
+        </h1>
+    </header>
+
+    <main class="conteudo">
+        <div class="titulo">
+            <h2>Produtos</h2>
+            <span>Lista de produto na minha Loja.</span>
+        </div>
+
+        <div class="card">
+            <article class="campo">
+                <label>Produto</label>
+                <input type="text" id="txtproduto" placeholder="Nome do projeto">
+            </article>
+
+            <article class="campo">
+                <label>Preço</label>
+                <input type="number" id="txtpreco" placeholder="Digite o valor do produto">
+            </article>
+
+            <aside class="botao">
+                <button onclick="produto.salvar()">Salvar</button>
+                <button onclick="produto.cancelar()">Cancelar</button>
+            </aside>
+        </div>
+
+        <section class="content">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
+                </thead>
+                <tbody id="tbody">
+                    <tr>
+                        <td>01</td>
+                        <td>Livro</td>
+                        <td>19,99</td>
+                        <td>
+                            <i class="bi bi-pencil-square"></i>
+                            <i class="bi bi-trash-fill"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
     <script src="script/index.js"></script>
 </body>
 </html>

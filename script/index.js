@@ -1,18 +1,14 @@
-
-
 class Produto {
     constructor() {
-        this.id = 0
-        this.nomeProduto = ''   
-        this.valor = 0
+        this.dados = []
     }
 
-    adicionar() {
-        alert('adicionou')
+    salvar() {
+        
     }
 
-    excluir() {
-        alert('item excluido')
+    cancelar() {
+       
     }
 }
 
